@@ -1,3 +1,5 @@
+<img src="/img/cap-todolist.png" alt="to-do-list todolist josue hoenicka">
+
 <b>ENGLISH</b>
 
 Basic to do list, still to do many improvements!
