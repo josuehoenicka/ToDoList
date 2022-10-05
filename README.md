@@ -1,1 +1,3 @@
-<img src="./assets/todo.png" alt="to do list">
+<div align="center">
+  <img src="./assets/todo.png" alt="to do">
+</div>
