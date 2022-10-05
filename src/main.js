@@ -1,4 +1,4 @@
-// Info date
+// Info date 
 const dateNumber = document.getElementById('dateNumber');
 const dateText = document.getElementById('dateText');
 const dateMonth = document.getElementById('dateMonth');
@@ -6,7 +6,6 @@ const dateYear = document.getElementById('dateYear');
 
 // Tasks Container
 const tasksContainer = document.getElementById('tasksContainer');
-
 const setDate = () => {
     const date = new Date();
     dateNumber.textContent = date.toLocaleString('es', { day: 'numeric' });
@@ -14,7 +13,6 @@ const setDate = () => {
     dateMonth.textContent = date.toLocaleString('es', { month: 'short' });
     dateYear.textContent = date.toLocaleString('es', { year: 'numeric' });
 };
-
 const addNewTask = event => {
     event.preventDefault();
     const { value } = event.target.taskText;
@@ -26,11 +24,9 @@ const addNewTask = event => {
     tasksContainer.prepend(task);
     event.target.reset();
 };
-
 const changeTaskState = event => {
     event.target.classList.toggle('done');
 };
-
 const order = () => {
     const done = [];
     const toDo = [];
@@ -39,9 +35,7 @@ const order = () => {
     })
     return [...toDo, ...done];
 }
-
 const renderOrderedTasks = () => {
     order().forEach(el => tasksContainer.appendChild(el))
 }
-
 setDate();
